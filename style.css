@@ -44,7 +44,13 @@ body {
 
 	padding-left: 6px;
 	padding-right: 6px;
+}
 
+.file-explorer .file-section {
+	flex-grow: 1.5;
+}
+
+.file-explorer .info-section {
 	flex-grow: 1;
 }
 
@@ -92,4 +98,114 @@ body {
 	background: #040204;
 	font-size: 0.9em;
 	padding: 2px 0 0;
+}
+
+.file-explorer .content {
+	height: calc(100% - 1em);
+	padding-top: .7em;
+	display: flex;
+	flex-direction: column;
+}
+
+.file-explorer .content .files {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.file-explorer .content .files .row.filler {
+	flex-grow: 1;
+}
+
+.file-explorer .content .files .row.filler .column {
+	height: 100%;
+}
+
+.file-explorer .content .files .row.table-heading {
+	color: #fcfe54;	
+}
+
+.file-explorer .content .files .row.hoverable:hover {
+	background: #04aaac;
+}
+
+.file-explorer .content .files .row.hoverable:hover .column {
+	border-color: #0402ac;
+}
+
+.file-explorer .content .files .row.hoverable:hover a {
+	color: #0402ac;
+}
+
+.file-explorer .content .files .row a {
+	color: #54fefc;
+	text-decoration: none;
+}
+
+.file-explorer .content .files .row .column {
+	width: 35%;
+	display: inline-block;
+	border-right: 2px solid #54fefc;
+}
+
+.file-explorer .content .files .row .column:last-child {
+	border-right: none;
+	width: 25%;
+}
+
+.file-explorer .content .files .row .column h3 {
+	margin: 0;
+	display: inline-block;
+}
+
+.file-explorer .content .files .row .column h3.center {
+	flex-grow: 1;
+	text-align: center;
+}
+
+.file-explorer .content .info-bar {
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-top: 1px solid #54fefc;
+}
+
+.file-explorer .content .info-bar * {
+	padding: 0 20px;
+}
+
+.file-explorer .content .info-bar h4 {
+	flex-grow: 1;
+}
+
+
+/* INFO SECTION */
+.info-section .content {
+	color: #54fefc;
+	text-align: center;
+}
+
+.info-section p {
+}
+
+.info-section hr {
+	width: 100%;
+	border-color: #04aaac;
+	border-top: 1px solid #04aaac;
+}
+
+.info-section pre {
+	display: inline-block;
+	text-align: left;
+	font-size: .8em;
+}
+
+.yellow {
+	color: #fcfe54;
+}
+
+.left {
+	padding-left: 15px;
+	text-align: left;
 }
